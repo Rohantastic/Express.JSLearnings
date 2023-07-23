@@ -1,9 +1,9 @@
 const express = require('express');
 const app = express();
-
+const file = __dirname + "/" + "index.html";
 
 app.get("/",(req,res)=>{
-    res.send(`<h1> Hello, People</h1>`);
+    res.sendFile(file);
 });
 
 
